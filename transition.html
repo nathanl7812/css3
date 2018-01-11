@@ -11,13 +11,18 @@
       height: 50px;
       width: 400px;
       font-size: 3em;
-      transition-delay:1s;
+      transition:1s;
+      /*transition-delay:1s;*/
+      color:lightgray;
     }
     
     input:focus {
+      transition-timing-function: ease-in;
       box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-    
+      background-color:lightcyan;
+      color:black;
     }
+    
   </style>
 </head>
 <body>
