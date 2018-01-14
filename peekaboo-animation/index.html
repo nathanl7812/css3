@@ -11,6 +11,8 @@
       display: inline-block;
       position: relative;
       text-align: center;
+      /*transition-timing-function: ease-in;*/
+      transition-delay: 10s;
     }
     
     #shade1 {
@@ -43,9 +45,10 @@
     
     
     #peekaboo {
+      animation: peekaboo 4s ease-in-out 0s 1 normal;
+      -webkit-transition: peekaboo 2s ease-in;
       z-index: -1;
       background: orange;
-      
     }
     @keyframes peekaboo {
       0% {opacity: 0;}
@@ -56,6 +59,7 @@
       0% {opacity: 0;}
       50% {opacity: 0;}
       100% {opacity: 1;} 
+      
     }
   </style>
 </head>
